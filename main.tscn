@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmtgmeweo1uj1"]
+
+[ext_resource type="Script" uid="uid://duqpfx4hy6om" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://b4fel1blquqcf" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="MeshLibrary" uid="uid://bllolpfmlfcm7" path="res://world_tiles.tres" id="3_1bvp3"]
+
+[node name="main" type="Node3D"]
+script = ExtResource("1_0xm2m")
+player_scene = ExtResource("1_ig7tw")
+
+[node name="GridMap" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+mesh_library = ExtResource("3_1bvp3")
+cell_size = Vector3(1, 1, 1)
+data = {
+"cells": PackedInt32Array(65535, 0, 0, 65535, 1, 0, 0, 1, 0, 0, 0, 0, 65535, 65535, 0, 0, 65535, 0, 1, 1, 0, 1, 0, 0, 1, 65535, 0, 65534, 65535, 0, 65534, 0, 0, 65534, 1, 0, 65534, 65534, 0, 65535, 65534, 0, 0, 65534, 0, 1, 65534, 0, 65533, 65533, 0, 65534, 65533, 0, 65535, 65533, 0, 0, 65533, 0, 1, 65533, 0, 2, 65533, 0, 2, 65534, 0, 2, 65535, 0, 2, 0, 0, 2, 1, 0, 2, 2, 0, 1, 2, 0, 0, 2, 0, 65535, 2, 0, 65534, 2, 0, 65533, 2, 0, 65533, 1, 0, 65533, 0, 0, 65533, 65535, 0, 65533, 65534, 0, 65532, 65532, 0, 65532, 65533, 0, 65532, 65534, 0, 65532, 65535, 0, 65532, 0, 0, 65532, 1, 0, 65532, 2, 0, 65532, 3, 0, 65533, 3, 0, 65534, 3, 0, 65535, 3, 0, 0, 3, 0, 1, 3, 0, 2, 3, 0, 3, 3, 0, 3, 2, 0, 3, 1, 0, 3, 0, 0, 3, 65535, 0, 3, 65534, 0, 3, 65533, 0, 3, 65532, 0, 2, 65532, 0, 1, 65532, 0, 0, 65532, 0, 65535, 65532, 0, 65534, 65532, 0, 65533, 65532, 0)
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="host" type="Button" parent="CanvasLayer"]
+offset_left = 181.0
+offset_right = 318.0
+offset_bottom = 75.0
+text = "host"
+
+[node name="join" type="Button" parent="CanvasLayer"]
+offset_right = 125.0
+offset_bottom = 77.0
+text = "join"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("uid://b4fel1blquqcf")
+spawn_path = NodePath("..")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.040794462, 0.99916756, 0, -0.99916756, -0.040794462, 0, 7.660662, 3.8077679)
+
+[connection signal="pressed" from="CanvasLayer/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="CanvasLayer/join" to="." method="_on_join_pressed"]
