@@ -3,13 +3,19 @@ extends Node3D
 var peer = ENetMultiplayerPeer.new()
 @export var player_scene : PackedScene
 
-func _on_host_pressed() -> void:
+func _ready() -> void:
 	peer.create_server(1027)
 	multiplayer.multiplayer_peer = peer
 	multiplayer.peer_connected.connect(add_player)
 	add_player()
-	$CanvasLayer/host.hide()
-	$CanvasLayer/join.hide()
+
+#func _on_host_pressed() -> void:
+	#peer.create_server(1027)
+	#multiplayer.multiplayer_peer = peer
+	#multiplayer.peer_connected.connect(add_player)
+	#add_player()
+	#$CanvasLayer/host.hide()
+	#$CanvasLayer/join.hide()
 
 func _on_join_pressed() -> void:
 	peer.create_client("192.168.50.250",1027)
