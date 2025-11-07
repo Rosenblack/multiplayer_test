@@ -1,5 +1,9 @@
-res://main.tscn::4759bcf5eb434e0eda68940881edb225::1761969486::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://player.tscn::64b748d835b3a9f208d40aa461175ed2::1761895826::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
-res://world_tiles.tres::d72a96ee348895c5559d06fe627ab28b::1761969315::res://.godot/exported/133200997/export-afd67ec4405b96058d8b69d31610ddd6-world_tiles.res
-res://assets/meshes2.tscn::b7c5f7f954ea88956407cebca45c62a5::1761969234::res://.godot/exported/133200997/export-3db85c25ec4ea15c7c54b344b6887048-meshes2.scn
-res://assets/world_tiles.tres::df22e06db3c834031406a0f8a455d2cc::1761969234::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
+res://main.tscn::09aca2050c78a18d409bbb7e66933209::1762498365::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://player.tscn::ccf9a6ba4b96f22d11a7c4ffee751dd5::1762498611::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
+res://world_tiles.tres::d72a96ee348895c5559d06fe627ab28b::1762021740::res://.godot/exported/133200997/export-afd67ec4405b96058d8b69d31610ddd6-world_tiles.res
+res://assets/meshes2.tscn::40a8c79f15267ddad246a0fb1201fd62::1762253557::res://.godot/exported/133200997/export-3db85c25ec4ea15c7c54b344b6887048-meshes2.scn
+res://assets/world_tiles.tres::df22e06db3c834031406a0f8a455d2cc::1762498356::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
+res://addons/gridmap-plus/assets/Buttons.tres::4c78b022b25e74d1f776b3789558188e::1762253487::res://.godot/exported/133200997/export-4824c4e54b3942677acf394561961221-Buttons.res
+res://addons/gridmap-plus/assets/Crosshair.tres::a3fd89258cb0e46fc9275b8112bd353c::1762253487::res://.godot/exported/133200997/export-2e962f5c96a75e341f5d89513201b166-Crosshair.res
+res://addons/gridmap-plus/dock/Dock.tscn::480e7cbd411c1b99267bd5cf3ef1c64a::1762253487::res://.godot/exported/133200997/export-424f126aea340e5f7298700e3e0f8d09-Dock.scn
+res://addons/gridmap-plus/dock/Toolbar.tscn::0c3a06d035e08045751be51a6e9677d9::1762253487::res://.godot/exported/133200997/export-09ab738921419881b2f65b06ec6998e2-Toolbar.scn
