@@ -1,3 +1,5 @@
-res://main.tscn
-res://assets/world_tiles.tres
 res://player.tscn
+res://assets/world_tiles.tres
+res://player.gd
+res://wall.tscn
+res://main.tscn

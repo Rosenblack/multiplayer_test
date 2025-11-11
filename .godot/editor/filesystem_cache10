@@ -1,11 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1762498246
-export_presets.cfg::TextFile::-1::1762022505::0::1::::<><><>0<>0<><>::
+::res://::1762888189
+export_presets.cfg::TextFile::-1::1762499251::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1139429938186830205::1761806414::1761896124::1::::<><><>0<>0<>0911f4ffd258ffe9c4698c26c308ec6c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-main.gd::GDScript::252852644263343092::1762022480::0::1::::<>Node3D<><>0<>0<><>::
-main.tscn::PackedScene::3268295960440676428::1762142977::0::1::::<><><>0<>0<><>::uid://duqpfx4hy6om::::res://main.gd<>uid://b4fel1blquqcf::::res://player.tscn<>uid://cbxd4hy6xnhte::::res://assets/world_tiles.tres
-player.gd::GDScript::8675766123869642298::1762142977::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::4432482917344242633::1762252600::0::1::::<><><>0<>0<><>::uid://dvuuuogvulehe::::res://player.gd<>uid://yyus16n4knt5::::res://assets/gui/controls/up.png<>uid://b65ykqjbf37im::::res://assets/gui/controls/up_pressed.png<>uid://c5eo8khgt5vtl::::res://assets/gui/controls/down.png<>uid://chufa1vr4egws::::res://assets/gui/controls/down_pressed.png<>uid://r0kfktngruax::::res://assets/gui/controls/left.png<>uid://bsubi3re354uv::::res://assets/gui/controls/left_pressed.png<>uid://dkosaavbgmpc1::::res://assets/gui/controls/right.png<>uid://cs14us3ksdy0g::::res://assets/gui/controls/right_pressed.png<>uid://cq3fxg148w6y0::::res://assets/gui/controls/middle.png
+main.gd::GDScript::252852644263343092::1762888150::0::1::::<>Node3D<><>0<>0<><>::
+main.tscn::PackedScene::3268295960440676428::1762888150::0::1::::<><><>0<>0<><>::uid://duqpfx4hy6om::::res://main.gd<>uid://b4fel1blquqcf::::res://player.tscn<>uid://cbxd4hy6xnhte::::res://assets/world_tiles.tres
+player.gd::GDScript::8675766123869642298::1762888150::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::4432482917344242633::1762498611::0::1::::<><><>0<>0<><>::uid://dvuuuogvulehe::::res://player.gd<>uid://yyus16n4knt5::::res://assets/gui/controls/up.png<>uid://b65ykqjbf37im::::res://assets/gui/controls/up_pressed.png<>uid://c5eo8khgt5vtl::::res://assets/gui/controls/down.png<>uid://chufa1vr4egws::::res://assets/gui/controls/down_pressed.png<>uid://r0kfktngruax::::res://assets/gui/controls/left.png<>uid://bsubi3re354uv::::res://assets/gui/controls/left_pressed.png<>uid://dkosaavbgmpc1::::res://assets/gui/controls/right.png<>uid://cs14us3ksdy0g::::res://assets/gui/controls/right_pressed.png<>uid://cq3fxg148w6y0::::res://assets/gui/controls/middle.png
 world_tiles.tres::MeshLibrary::3182076596772197464::1762021740::0::1::::<><><>0<>0<><>::
 ::res://addons/::1762253487
 ::res://addons/gridmap-plus/::1762253487
@@ -30,9 +30,9 @@ Dock.tscn::PackedScene::7935977390752988179::1762253487::0::1::::<><><>0<>0<><>:
 Origin.gdshader::Shader::3865129933515456729::1762253487::0::1::::<><><>0<>0<><>::
 Toolbar.gd::GDScript::7496858078651797513::1762253487::0::1::::<>Node2D<><>0<>1<><>::
 Toolbar.tscn::PackedScene::1792008193621627274::1762253487::0::1::::<><><>0<>0<><>::res://addons/gridmap-plus/dock/Toolbar.gd<>uid://dhbtl6pbql7uf::::res://addons/gridmap-plus/assets/digits.png<>uid://wwef06t7bh5e::::res://addons/gridmap-plus/assets/selection.png
-::res://assets/::1762253557
+::res://assets/::1762886959
 meshes2.tscn::PackedScene::8043508239849360098::1762253557::0::1::::<><><>0<>0<><>::
-world_tiles.tres::MeshLibrary::4890745244547661278::1762253557::0::1::::<><><>0<>0<><>::uid://c8tm53wwnrlxe::::res://assets/imports/ground/dirt_light_0.png<>uid://cgyx6vpi1g0lt::::res://assets/imports/ground/dirt_dark_0.png<>uid://bfwd837gotbcs::::res://assets/imports/wall/dirt_wall_0.png<>uid://bwyn08bk4t7ek::::res://assets/imports/wall/grass_0.png<>uid://do3nxev2tdyhw::::res://assets/imports/wall/grass_dark_0.png<>uid://1yrj37esf4xa::::res://assets/imports/wall/dirt_wall_light_0.png
+world_tiles.tres::MeshLibrary::4890745244547661278::1762886959::0::1::::<><><>0<>0<><>::uid://c8tm53wwnrlxe::::res://assets/imports/ground/dirt_light_0.png<>uid://cgyx6vpi1g0lt::::res://assets/imports/ground/dirt_dark_0.png<>uid://bfwd837gotbcs::::res://assets/imports/wall/dirt_wall_0.png<>uid://bwyn08bk4t7ek::::res://assets/imports/wall/grass_0.png<>uid://do3nxev2tdyhw::::res://assets/imports/wall/grass_dark_0.png<>uid://1yrj37esf4xa::::res://assets/imports/wall/dirt_wall_light_0.png
 ::res://assets/gui/::1762252600
 ::res://assets/gui/controls/::1762252600
 a.png::CompressedTexture2D::569782258255552157::1760982125::1762252600::1::::<><><>0<>0<>acc6ed4871f79f00f41857a35cd54a44<>res://.godot/imported/a.png-d4e7af57d5ed0b9525c7662a57acaadd.ctex::
@@ -86,5 +86,5 @@ index.apple-touch-icon.png::CompressedTexture2D::5452716529906112734::1761969234
 index.icon.png::CompressedTexture2D::1185272200257160647::1761969234::1761969234::1::::<><><>0<>0<>9f76a5145f5651efc73c7f5db9cee784<>res://.godot/imported/index.icon.png-cadbefa41181fd8e84a8a5b5eda9bace.ctex::
 index.manifest.json::JSON::-1::1761969234::0::1::::<><><>0<>0<><>::
 index.png::CompressedTexture2D::5755868911563981955::1761969234::1761969234::1::::<><><>0<>0<>69621be4953c7b6194a475f92f8d2964<>res://.godot/imported/index.png-6673cb0e89f6067729823438234a94ed.ctex::
-::res://exports/linux/::1762022505
-::res://exports/windows/::1762022339
+::res://exports/linux/::1762498673
+::res://exports/windows/::1762498680
