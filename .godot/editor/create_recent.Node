@@ -1,8 +1,14 @@
+LineEdit
+Node3D
 MeshInstance3D
+WorldEnvironment
+Control
+Button
+TextEdit
+MultiplayerSynchronizer
+LightmapGI
+OmniLight3D
 CollisionShape3D
 StaticBody3D
-MultiplayerSynchronizer
 MultiplayerSpawner
-Node3D
 RayCast3D
-Label

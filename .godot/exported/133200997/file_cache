@@ -1,10 +1,5 @@
-res://main.tscn::4f6e9b3cc6027c6c0efe5c03e14a96db::1762888556::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
-res://player.tscn::f3911ee52aeb294ccd6242d5c44c7aa4::1762888216::res://.godot/exported/133200997/export-36a25e342948d0ceacc500772b5412b3-player.scn
-res://world_tiles.tres::d72a96ee348895c5559d06fe627ab28b::1762021740::res://.godot/exported/133200997/export-afd67ec4405b96058d8b69d31610ddd6-world_tiles.res
 res://assets/meshes2.tscn::40a8c79f15267ddad246a0fb1201fd62::1762253557::res://.godot/exported/133200997/export-3db85c25ec4ea15c7c54b344b6887048-meshes2.scn
-res://assets/world_tiles.tres::df22e06db3c834031406a0f8a455d2cc::1762888216::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
-res://addons/gridmap-plus/assets/Buttons.tres::4c78b022b25e74d1f776b3789558188e::1762253487::res://.godot/exported/133200997/export-4824c4e54b3942677acf394561961221-Buttons.res
-res://addons/gridmap-plus/assets/Crosshair.tres::a3fd89258cb0e46fc9275b8112bd353c::1762253487::res://.godot/exported/133200997/export-2e962f5c96a75e341f5d89513201b166-Crosshair.res
-res://addons/gridmap-plus/dock/Dock.tscn::480e7cbd411c1b99267bd5cf3ef1c64a::1762253487::res://.godot/exported/133200997/export-424f126aea340e5f7298700e3e0f8d09-Dock.scn
-res://addons/gridmap-plus/dock/Toolbar.tscn::0c3a06d035e08045751be51a6e9677d9::1762253487::res://.godot/exported/133200997/export-09ab738921419881b2f65b06ec6998e2-Toolbar.scn
-res://wall.tscn::c70be5f1691fe7c7f51796fcf32ce290::1762888559::res://.godot/exported/133200997/export-20a18325f7c6eab45b6b222a29d4ddff-wall.scn
+res://assets/world_tiles.tres::dd59ed5616426f39f7d961d770de3232::1763149312::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
+res://scenes/main.tscn::265fec87a4df8a6bbc0ecc9e44217b63::1763149553::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/player.tscn::71860068dce8c140d0d8fedf90d156c1::1763147841::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/wall.tscn::3ed187c686c8d6f7d3adabb8d1a69c43::1763031327::res://.godot/exported/133200997/export-07690686bd1a72f71ae2b53bb79af276-wall.scn
