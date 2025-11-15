@@ -6,6 +6,7 @@ extends CharacterBody3D
 var target_velocity = Vector3.ZERO
 @onready var cam = $Models/Camera3D
 var n = 0
+var model = 0
 
 func _ready() -> void:
 	cam.current = is_multiplayer_authority()
@@ -14,9 +15,17 @@ func _ready() -> void:
 		# MAKE SURE THIS SHIT STAYS HIDDEN IN EDITOR OR IT BREAKS #
 		$gui/NameSelect/Button.show()
 		$gui/NameSelect/LineEdit.show()
+		$gui/ModelSelect/BaseChange.show()
+		$gui/ModelSelect/ShaleChange.show()
 	
 func _process(delta: float) -> void:
-	pass
+	if is_multiplayer_authority():
+		if model == 0:
+			$Models/Pivot/Base.show()
+			$Models/Pivot/Shale.hide()
+		if model == 1:
+			$Models/Pivot/Base.hide()
+			$Models/Pivot/Shale.show()
 	
 func _physics_process(delta):
 	if is_multiplayer_authority():
@@ -39,9 +48,15 @@ func _physics_process(delta):
 			if direction != Vector3.ZERO:
 				direction = direction.normalized()
 				$Models/Pivot.basis = Basis.looking_at(direction)
-				$Models/Pivot/AnimationPlayer.play("shale_walk")
+				if model == 0:
+					$Models/Pivot/AnimationPlayer.play("base_walk")
+				if model == 1:
+					$Models/Pivot/AnimationPlayer.play("shale_walk")
 			if direction == Vector3.ZERO:
-				$Models/Pivot/AnimationPlayer.play("shale_idle")
+				if model == 0:
+					$Models/Pivot/AnimationPlayer.play("base_idle")
+				if model == 1:
+					$Models/Pivot/AnimationPlayer.play("shale_idle")
 
 			# Ground Velocity
 			target_velocity.x = direction.x * speed
@@ -64,5 +79,13 @@ func _on_button_pressed() -> void:
 	if is_multiplayer_authority():
 		$gui/NameSelect/Button.hide()
 		$gui/NameSelect/LineEdit.hide()
+		$gui/ModelSelect/BaseChange.hide()
+		$gui/ModelSelect/ShaleChange.hide()
 		$Models/Pivot/Label3D.text = $gui/NameSelect/LineEdit.text
 		n = 1
+
+func _on_base_change_pressed() -> void:
+		model = 0
+
+func _on_shale_change_pressed() -> void:
+		model = 1

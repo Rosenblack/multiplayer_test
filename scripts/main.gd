@@ -17,7 +17,7 @@ func _on_host_pressed() -> void:
 	$CanvasLayer/LineEdit.hide()
 
 func _on_join_pressed() -> void:
-	peer.create_client("127.0.0.1",1027)
+	peer.create_client($CanvasLayer/LineEdit.text,1027)
 	multiplayer.multiplayer_peer = peer
 	$CanvasLayer/host.hide()
 	$CanvasLayer/join.hide()
