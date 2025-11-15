@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=4 uid="uid://b4fel1blquqcf"]
+[gd_scene load_steps=57 format=4 uid="uid://b4fel1blquqcf"]
 
 [ext_resource type="Script" uid="uid://dvuuuogvulehe" path="res://scripts/player.gd" id="1_4flbx"]
 [ext_resource type="Texture2D" uid="uid://cvm3gcxkcsora" path="res://assets/imports/kobold/kobold_0.png" id="2_d2wvv"]
@@ -11,6 +11,20 @@
 [ext_resource type="Texture2D" uid="uid://dkosaavbgmpc1" path="res://assets/gui/controls/right.png" id="8_u1c27"]
 [ext_resource type="Texture2D" uid="uid://cs14us3ksdy0g" path="res://assets/gui/controls/right_pressed.png" id="9_op7ga"]
 [ext_resource type="Texture2D" uid="uid://cq3fxg148w6y0" path="res://assets/gui/controls/middle.png" id="10_q13i1"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_n7ghd"]
+properties/0/path = NodePath("Models/Pivot/AnimationPlayer:current_animation")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:position")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:rotation")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+properties/3/path = NodePath("Models/Pivot/Label3D:visible")
+properties/3/spawn = true
+properties/3/replication_mode = 1
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikhws"]
 resource_name = "material_0"
@@ -636,63 +650,63 @@ length = 0.001
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node/doll")
+tracks/0/path = NodePath("Shale/doll")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.5, 0)
 tracks/1/type = "rotation_3d"
 tracks/1/imported = true
 tracks/1/enabled = true
-tracks/1/path = NodePath("Node/doll/torso2/tail5")
+tracks/1/path = NodePath("Shale/doll/torso2/tail5")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = PackedFloat32Array(0, 1, 0.279829, 0, 0, 0.96004987)
 tracks/2/type = "rotation_3d"
 tracks/2/imported = true
 tracks/2/enabled = true
-tracks/2/path = NodePath("Node/doll/leftarm2")
+tracks/2/path = NodePath("Shale/doll/leftarm2")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/3/type = "rotation_3d"
 tracks/3/imported = true
 tracks/3/enabled = true
-tracks/3/path = NodePath("Node/doll/rightarm2")
+tracks/3/path = NodePath("Shale/doll/rightarm2")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/4/type = "rotation_3d"
 tracks/4/imported = true
 tracks/4/enabled = true
-tracks/4/path = NodePath("Node/doll/leftleg2")
+tracks/4/path = NodePath("Shale/doll/leftleg2")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/5/type = "rotation_3d"
 tracks/5/imported = true
 tracks/5/enabled = true
-tracks/5/path = NodePath("Node/doll/rightleg2")
+tracks/5/path = NodePath("Shale/doll/rightleg2")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/6/type = "rotation_3d"
 tracks/6/imported = true
 tracks/6/enabled = true
-tracks/6/path = NodePath("Node/doll/torso2/tail5/0/1/2/3")
+tracks/6/path = NodePath("Shale/doll/torso2/tail5/0/1/2/3")
 tracks/6/interp = 1
 tracks/6/loop_wrap = true
 tracks/6/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/7/type = "rotation_3d"
 tracks/7/imported = true
 tracks/7/enabled = true
-tracks/7/path = NodePath("Node/doll/torso2/tail5/0/1/2")
+tracks/7/path = NodePath("Shale/doll/torso2/tail5/0/1/2")
 tracks/7/interp = 1
 tracks/7/loop_wrap = true
 tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
 tracks/8/type = "rotation_3d"
 tracks/8/imported = true
 tracks/8/enabled = true
-tracks/8/path = NodePath("Node/doll/torso2/tail5/0/1")
+tracks/8/path = NodePath("Shale/doll/torso2/tail5/0/1")
 tracks/8/interp = 1
 tracks/8/loop_wrap = true
 tracks/8/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1)
@@ -702,94 +716,74 @@ resource_name = "animation_walk"
 tracks/0/type = "position_3d"
 tracks/0/imported = true
 tracks/0/enabled = true
-tracks/0/path = NodePath("Node/doll")
+tracks/0/path = NodePath("Shale/doll")
 tracks/0/interp = 0
 tracks/0/loop_wrap = true
 tracks/0/keys = PackedFloat32Array(0, 1, 0, 0.5, 0, 0.23333333, 1, 0, 0.5, 0, 0.26666668, 1, 0, 0.5625, 0, 0.46666667, 1, 0, 0.5625, 0, 0.5, 1, 0, 0.5, 0, 0.73333335, 1, 0, 0.5, 0, 0.76666665, 1, 0, 0.5625, 0, 0.96666664, 1, 0, 0.5625, 0, 1, 1, 0, 0.5, 0)
 tracks/1/type = "rotation_3d"
 tracks/1/imported = true
 tracks/1/enabled = true
-tracks/1/path = NodePath("Node/doll/torso2/tail5")
+tracks/1/path = NodePath("Shale/doll/torso2/tail5")
 tracks/1/interp = 0
 tracks/1/loop_wrap = true
 tracks/1/keys = PackedFloat32Array(0, 1, 0.27982903, 0, 0, 0.96004987, 0.23333333, 1, 0.27982903, 0, 0, 0.96004987, 0.26666668, 1, 0.27319598, -0.20779285, 0.06056609, 0.93729293, 0.46666667, 1, 0.27319598, -0.20779285, 0.06056609, 0.93729293, 0.5, 1, 0.27982903, 0, 0, 0.96004987, 0.73333335, 1, 0.27982903, 0, 0, 0.96004987, 0.76666665, 1, 0.27319598, 0.20779285, -0.06056609, 0.93729293, 1, 1, 0.27319598, 0.20779285, -0.06056609, 0.93729293)
 tracks/2/type = "rotation_3d"
 tracks/2/imported = true
 tracks/2/enabled = true
-tracks/2/path = NodePath("Node/doll/leftarm2")
+tracks/2/path = NodePath("Shale/doll/leftarm2")
 tracks/2/interp = 0
 tracks/2/loop_wrap = true
 tracks/2/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, 0.4422887, 0, 0, 0.89687276, 0.46666667, 1, 0.4422887, 0, 0, 0.89687276, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, -0.4422887, 0, 0, 0.89687276, 1, 1, -0.4422887, 0, 0, 0.89687276)
 tracks/3/type = "rotation_3d"
 tracks/3/imported = true
 tracks/3/enabled = true
-tracks/3/path = NodePath("Node/doll/rightarm2")
+tracks/3/path = NodePath("Shale/doll/rightarm2")
 tracks/3/interp = 0
 tracks/3/loop_wrap = true
 tracks/3/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, -0.4422887, 0, 0, 0.89687276, 0.46666667, 1, -0.4422887, 0, 0, 0.89687276, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, 0.4422887, 0, 0, 0.89687276, 1, 1, 0.4422887, 0, 0, 0.89687276)
 tracks/4/type = "rotation_3d"
 tracks/4/imported = true
 tracks/4/enabled = true
-tracks/4/path = NodePath("Node/doll/leftleg2")
+tracks/4/path = NodePath("Shale/doll/leftleg2")
 tracks/4/interp = 0
 tracks/4/loop_wrap = true
 tracks/4/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, -0.4422887, 0, 0, 0.89687276, 0.46666667, 1, -0.4422887, 0, 0, 0.89687276, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, 0.36243805, 0, 0, 0.93200785, 1, 1, 0.36243805, 0, 0, 0.93200785)
 tracks/5/type = "rotation_3d"
 tracks/5/imported = true
 tracks/5/enabled = true
-tracks/5/path = NodePath("Node/doll/rightleg2")
+tracks/5/path = NodePath("Shale/doll/rightleg2")
 tracks/5/interp = 0
 tracks/5/loop_wrap = true
 tracks/5/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, 0.4422887, 0, 0, 0.89687276, 0.46666667, 1, 0.4422887, 0, 0, 0.89687276, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, -0.4422887, 0, 0, 0.89687276, 1, 1, -0.4422887, 0, 0, 0.89687276)
 tracks/6/type = "rotation_3d"
 tracks/6/imported = true
 tracks/6/enabled = true
-tracks/6/path = NodePath("Node/doll/torso2/tail5/0/1/2/3")
+tracks/6/path = NodePath("Shale/doll/torso2/tail5/0/1/2/3")
 tracks/6/interp = 0
 tracks/6/loop_wrap = true
 tracks/6/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, 0, -0.021814886, 0, 0.9997621, 0.46666667, 1, 0, -0.021814886, 0, 0.9997621, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, 0, 0.021814886, 0, 0.9997621, 1, 1, 0, 0.021814886, 0, 0.9997621)
 tracks/7/type = "rotation_3d"
 tracks/7/imported = true
 tracks/7/enabled = true
-tracks/7/path = NodePath("Node/doll/torso2/tail5/0/1/2")
+tracks/7/path = NodePath("Shale/doll/torso2/tail5/0/1/2")
 tracks/7/interp = 0
 tracks/7/loop_wrap = true
 tracks/7/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, 0, -0.021814886, 0, 0.9997621, 0.46666667, 1, 0, -0.021814886, 0, 0.9997621, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, 0, 0.021814886, 0, 0.9997621, 1, 1, 0, 0.021814886, 0, 0.9997621)
 tracks/8/type = "rotation_3d"
 tracks/8/imported = true
 tracks/8/enabled = true
-tracks/8/path = NodePath("Node/doll/torso2/tail5/0/1")
+tracks/8/path = NodePath("Shale/doll/torso2/tail5/0/1")
 tracks/8/interp = 0
 tracks/8/loop_wrap = true
 tracks/8/keys = PackedFloat32Array(0, 1, 0, 0, 0, 1, 0.23333333, 1, 0, 0, 0, 1, 0.26666668, 1, 0, -0.043619387, 0, 0.99904823, 0.46666667, 1, 0, -0.043619387, 0, 0.99904823, 0.5, 1, 0, 0, 0, 1, 0.73333335, 1, 0, 0, 0, 1, 0.76666665, 1, 0, 0.021814886, 0, 0.9997621, 1, 1, 0, 0.021814886, 0, 0.9997621)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_emhjl"]
 _data = {
-&"animation_idle": SubResource("Animation_vrus2"),
-&"animation_walk": SubResource("Animation_uy63r")
+&"shale_idle": SubResource("Animation_vrus2"),
+&"shale_walk": SubResource("Animation_uy63r")
 }
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4flbx"]
-
-[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_n7ghd"]
-properties/0/path = NodePath(".:position")
-properties/0/spawn = true
-properties/0/replication_mode = 1
-properties/1/path = NodePath("Pivot/AnimationPlayer:current_animation")
-properties/1/spawn = true
-properties/1/replication_mode = 1
-properties/2/path = NodePath("Pivot:rotation")
-properties/2/spawn = true
-properties/2/replication_mode = 1
-properties/3/path = NodePath("Label3D:text")
-properties/3/spawn = true
-properties/3/replication_mode = 1
-
-[sub_resource type="InputEventKey" id="InputEventKey_d2wvv"]
-keycode = 4194309
-
-[sub_resource type="Shortcut" id="Shortcut_3v2ag"]
-events = [SubResource("InputEventKey_d2wvv")]
 
 [sub_resource type="Environment" id="Environment_d2wvv"]
 
@@ -797,219 +791,226 @@ events = [SubResource("InputEventKey_d2wvv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 script = ExtResource("1_4flbx")
 
-[node name="Pivot" type="Node3D" parent="."]
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_n7ghd")
 
-[node name="Node" type="Node3D" parent="Pivot"]
+[node name="Models" type="Node3D" parent="."]
 
-[node name="doll" type="Node3D" parent="Pivot/Node"]
+[node name="Pivot" type="Node3D" parent="Models"]
+transform = Transform3D(1, 5.9604645e-08, 4.4703484e-08, 0, 1, 2.9802322e-08, 4.4703484e-08, 5.9604645e-08, 1, -2.3841858e-07, 0, -4.7683716e-07)
+
+[node name="Shale" type="Node3D" parent="Models/Pivot"]
+
+[node name="doll" type="Node3D" parent="Models/Pivot/Shale"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="head5" type="Node3D" parent="Pivot/Node/doll"]
+[node name="head5" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.25, 0)
 
-[node name="head" type="MeshInstance3D" parent="Pivot/Node/doll/head5"]
+[node name="head" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5"]
 mesh = SubResource("ArrayMesh_tc6fa")
 skeleton = NodePath("")
 
-[node name="lefthorn" type="Node3D" parent="Pivot/Node/doll/head5"]
+[node name="lefthorn" type="Node3D" parent="Models/Pivot/Shale/doll/head5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.18889125, 0.28101876, 0.050695624)
 
-[node name="base" type="MeshInstance3D" parent="Pivot/Node/doll/head5/lefthorn"]
+[node name="base" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/lefthorn"]
 transform = Transform3D(0.9396926, -0.21984631, -0.26200265, 0, 0.76604444, -0.64278764, 0.34202015, 0.6040228, 0.7198463, -0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_v1ct0")
 skeleton = NodePath("")
 
-[node name="mid" type="MeshInstance3D" parent="Pivot/Node/doll/head5/lefthorn"]
+[node name="mid" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/lefthorn"]
 transform = Transform3D(0.9396926, -0.29619813, -0.17101008, 1.4901161e-08, 0.5, -0.8660254, 0.34202015, 0.81379765, 0.46984637, -0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_el606")
 skeleton = NodePath("")
 
-[node name="mid2" type="MeshInstance3D" parent="Pivot/Node/doll/head5/lefthorn"]
+[node name="mid2" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/lefthorn"]
 transform = Transform3D(0.9396926, -0.3368241, -0.05939117, 0, 0.17364812, -0.9848078, 0.34202015, 0.92541665, 0.16317582, -0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_jy48q")
 skeleton = NodePath("")
 
-[node name="righthorn" type="Node3D" parent="Pivot/Node/doll/head5"]
+[node name="righthorn" type="Node3D" parent="Models/Pivot/Shale/doll/head5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19476438, 0.28101876, 0.048558123)
 
-[node name="base2" type="MeshInstance3D" parent="Pivot/Node/doll/head5/righthorn"]
+[node name="base2" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/righthorn"]
 transform = Transform3D(0.9396926, 0.21984631, 0.26200265, 0, 0.76604444, -0.64278764, -0.34202015, 0.6040228, 0.7198463, 0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_kgyic")
 skeleton = NodePath("")
 
-[node name="base3" type="MeshInstance3D" parent="Pivot/Node/doll/head5/righthorn"]
+[node name="base3" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/righthorn"]
 transform = Transform3D(0.9396926, 0.29619813, 0.17101008, -1.4901161e-08, 0.5, -0.8660254, -0.34202015, 0.81379765, 0.46984637, 0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_42ebb")
 skeleton = NodePath("")
 
-[node name="base4" type="MeshInstance3D" parent="Pivot/Node/doll/head5/righthorn"]
+[node name="base4" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/righthorn"]
 transform = Transform3D(0.9396926, 0.3368241, 0.05939117, 0, 0.17364812, -0.9848078, -0.34202015, 0.92541665, 0.16317582, 0.000208125, -0.0070175, 0.000166875)
 mesh = SubResource("ArrayMesh_5gqoe")
 skeleton = NodePath("")
 
-[node name="snoot" type="Node3D" parent="Pivot/Node/doll/head5"]
+[node name="snoot" type="Node3D" parent="Models/Pivot/Shale/doll/head5"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, -0.2421875)
 
-[node name="head2" type="MeshInstance3D" parent="Pivot/Node/doll/head5/snoot"]
+[node name="head2" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/snoot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0234375)
 mesh = SubResource("ArrayMesh_35nhu")
 skeleton = NodePath("")
 
-[node name="head3" type="MeshInstance3D" parent="Pivot/Node/doll/head5/snoot"]
+[node name="head3" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/snoot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0234375)
 mesh = SubResource("ArrayMesh_3sa12")
 skeleton = NodePath("")
 
-[node name="head4" type="MeshInstance3D" parent="Pivot/Node/doll/head5/snoot"]
+[node name="head4" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/head5/snoot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0234375)
 mesh = SubResource("ArrayMesh_wx3eb")
 skeleton = NodePath("")
 
-[node name="torso2" type="Node3D" parent="Pivot/Node/doll"]
+[node name="torso2" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.125, 0)
 
-[node name="torso" type="MeshInstance3D" parent="Pivot/Node/doll/torso2"]
+[node name="torso" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/torso2"]
 mesh = SubResource("ArrayMesh_1bgb8")
 skeleton = NodePath("")
 
-[node name="tail5" type="Node3D" parent="Pivot/Node/doll/torso2"]
-transform = Transform3D(1, 0, 0, 0, 0.8433914, -0.53729963, 0, 0.53729963, 0.8433914, 0.015625, -0.078125, 0.09375)
+[node name="tail5" type="Node3D" parent="Models/Pivot/Shale/doll/torso2"]
+transform = Transform3D(1, 0, 0, 0, 0.8433915, -0.5372996, 0, 0.5372996, 0.8433915, 0.015625, -0.078125, 0.09375)
 
-[node name="0" type="Node3D" parent="Pivot/Node/doll/torso2/tail5"]
+[node name="0" type="Node3D" parent="Models/Pivot/Shale/doll/torso2/tail5"]
 
-[node name="tail" type="MeshInstance3D" parent="Pivot/Node/doll/torso2/tail5/0"]
+[node name="tail" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0625, -0.0625, 0)
 mesh = SubResource("ArrayMesh_g6a00")
 skeleton = NodePath("")
 
-[node name="1" type="Node3D" parent="Pivot/Node/doll/torso2/tail5/0"]
+[node name="1" type="Node3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0"]
 
-[node name="tail2" type="MeshInstance3D" parent="Pivot/Node/doll/torso2/tail5/0/1"]
+[node name="tail2" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0/1"]
 transform = Transform3D(1, 0, 0, 0, 0.976296, 0.21643962, 0, -0.21643962, 0.976296, -0.0625, 0, 0.125)
 mesh = SubResource("ArrayMesh_tgvhy")
 skeleton = NodePath("")
 
-[node name="2" type="Node3D" parent="Pivot/Node/doll/torso2/tail5/0/1"]
+[node name="2" type="Node3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0/1"]
 
-[node name="tail3" type="MeshInstance3D" parent="Pivot/Node/doll/torso2/tail5/0/1/2"]
+[node name="tail3" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0/1/2"]
 transform = Transform3D(1, 0, 0, 0, 0.7372773, 0.6755902, 0, -0.6755902, 0.7372773, -0.0625, 0, 0.1875)
 mesh = SubResource("ArrayMesh_xyojk")
 skeleton = NodePath("")
 
-[node name="3" type="Node3D" parent="Pivot/Node/doll/torso2/tail5/0/1/2"]
+[node name="3" type="Node3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0/1/2"]
 
-[node name="tail4" type="MeshInstance3D" parent="Pivot/Node/doll/torso2/tail5/0/1/2/3"]
+[node name="tail4" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/torso2/tail5/0/1/2/3"]
 transform = Transform3D(1, 0, 0, 0, 0.5, 0.8660254, 0, -0.8660254, 0.5, -0.0625, 0.0625, 0.25)
 mesh = SubResource("ArrayMesh_rssei")
 skeleton = NodePath("")
 
-[node name="leftarm2" type="Node3D" parent="Pivot/Node/doll"]
+[node name="leftarm2" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.16092125, -0.0217975, 0)
 
-[node name="leftarm" type="MeshInstance3D" parent="Pivot/Node/doll/leftarm2"]
+[node name="leftarm" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/leftarm2"]
 transform = Transform3D(0.8870108, 0.4617486, 0, -0.4617486, 0.8870108, 0, 0, 0, 1, -0.0625, -0.0625, 0)
 mesh = SubResource("ArrayMesh_gu3g7")
 skeleton = NodePath("")
 
-[node name="rightarm2" type="Node3D" parent="Pivot/Node/doll"]
+[node name="rightarm2" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.16092125, -0.0217975, 0)
 
-[node name="rightarm" type="MeshInstance3D" parent="Pivot/Node/doll/rightarm2"]
+[node name="rightarm" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/rightarm2"]
 transform = Transform3D(0.8870108, -0.4617486, 0, 0.4617486, 0.8870108, 0, 0, 0, 1, 0.0625, -0.0625, 0)
 mesh = SubResource("ArrayMesh_1l3d6")
 skeleton = NodePath("")
 
-[node name="leftleg2" type="Node3D" parent="Pivot/Node/doll"]
+[node name="leftleg2" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.09375, -0.3125, 0)
 
-[node name="leftleg" type="MeshInstance3D" parent="Pivot/Node/doll/leftleg2"]
+[node name="leftleg" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/leftleg2"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -0.0625, 0)
 mesh = SubResource("ArrayMesh_7cigc")
 skeleton = NodePath("")
 
-[node name="rightleg2" type="Node3D" parent="Pivot/Node/doll"]
+[node name="rightleg2" type="Node3D" parent="Models/Pivot/Shale/doll"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09375, -0.3125, 0)
 
-[node name="rightleg" type="MeshInstance3D" parent="Pivot/Node/doll/rightleg2"]
+[node name="rightleg" type="MeshInstance3D" parent="Models/Pivot/Shale/doll/rightleg2"]
 transform = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -0.0625, 0)
 mesh = SubResource("ArrayMesh_nmpab")
 skeleton = NodePath("")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Pivot"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Models/Pivot"]
 libraries = {
 &"": SubResource("AnimationLibrary_emhjl")
 }
+
+[node name="Label3D" type="Label3D" parent="Models/Pivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1935278, 0)
+billboard = 1
+shaded = true
+text = "Player"
+
+[node name="Camera3D" type="Camera3D" parent="Models"]
+transform = Transform3D(0.7929838, -0.4653618, 0.39321128, 0.017345373, 0.66239303, 0.7489557, -0.6089958, -0.5870893, 0.5333388, 1.935, 2.56, 2.26)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 shape = SubResource("BoxShape3D_4flbx")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.7929838, -0.46536186, 0.39321128, 0.017345373, 0.66239303, 0.7489557, -0.6089958, -0.5870893, 0.5333388, 1.935, 2.56, 2.26)
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_d2wvv")
 
-[node name="Label3D" type="Label3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1935278, 0)
-billboard = 1
-shaded = true
+[node name="gui" type="Node" parent="."]
 
-[node name="controls" type="Node2D" parent="."]
+[node name="Controls" type="Node2D" parent="gui"]
 position = Vector2(-57, 153)
 metadata/_edit_group_ = true
 
-[node name="up" type="TouchScreenButton" parent="controls"]
+[node name="up" type="TouchScreenButton" parent="gui/Controls"]
 position = Vector2(155, 269)
 texture_normal = ExtResource("2_n7ghd")
 texture_pressed = ExtResource("3_nvl01")
 action = "move_forward"
 
-[node name="down" type="TouchScreenButton" parent="controls"]
+[node name="down" type="TouchScreenButton" parent="gui/Controls"]
 position = Vector2(155, 397)
 texture_normal = ExtResource("4_ivps1")
 texture_pressed = ExtResource("5_urp6f")
 action = "move_backward"
 
-[node name="left" type="TouchScreenButton" parent="controls"]
+[node name="left" type="TouchScreenButton" parent="gui/Controls"]
 position = Vector2(91, 333)
 texture_normal = ExtResource("6_bwjto")
 texture_pressed = ExtResource("7_606se")
 action = "move_left"
 
-[node name="right" type="TouchScreenButton" parent="controls"]
+[node name="right" type="TouchScreenButton" parent="gui/Controls"]
 position = Vector2(219, 333)
 texture_normal = ExtResource("8_u1c27")
 texture_pressed = ExtResource("9_op7ga")
 action = "move_right"
 
-[node name="Sprite2D" type="Sprite2D" parent="controls"]
+[node name="Sprite2D" type="Sprite2D" parent="gui/Controls"]
 position = Vector2(187, 365)
 texture = ExtResource("10_q13i1")
 
-[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
-replication_config = SubResource("SceneReplicationConfig_n7ghd")
-
-[node name="Control" type="Control" parent="."]
+[node name="NameSelect" type="Control" parent="gui"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
 
-[node name="Button" type="Button" parent="Control"]
+[node name="Button" type="Button" parent="gui/NameSelect"]
+visible = false
 layout_mode = 0
-offset_left = 136.0
-offset_top = 61.0
-offset_right = 252.0
-offset_bottom = 98.0
-shortcut = SubResource("Shortcut_3v2ag")
+offset_left = 131.0
+offset_top = 51.0
+offset_right = 187.0
+offset_bottom = 82.0
 text = "Enter"
 
-[node name="LineEdit" type="LineEdit" parent="Control"]
+[node name="LineEdit" type="LineEdit" parent="gui/NameSelect"]
+visible = false
 layout_mode = 0
-offset_top = 60.0
-offset_right = 134.0
-offset_bottom = 99.0
+offset_left = 4.0
+offset_top = 51.0
+offset_right = 129.0
+offset_bottom = 82.0
+placeholder_text = "Choose Name"
 max_length = 8
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_d2wvv")
-
-[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="gui/NameSelect/Button" to="." method="_on_button_pressed"]

@@ -4,17 +4,16 @@ extends CharacterBody3D
 @export var fall_acceleration = 75
 
 var target_velocity = Vector3.ZERO
-@onready var cam = $Camera3D
+@onready var cam = $Models/Camera3D
 var n = 0
 
 func _ready() -> void:
 	cam.current = is_multiplayer_authority()
-	$Pivot/AnimationPlayer.speed_scale = 2
+	$Models/Pivot/AnimationPlayer.speed_scale = 2
 	if is_multiplayer_authority():
-		$Control/LineEdit.show()
-		$Control/Button.show()
-		$Control/LineEdit.placeholder_text = "choose name"
-		$Label3D.text = "player"
+		# MAKE SURE THIS SHIT STAYS HIDDEN IN EDITOR OR IT BREAKS #
+		$gui/NameSelect/Button.show()
+		$gui/NameSelect/LineEdit.show()
 	
 func _process(delta: float) -> void:
 	pass
@@ -39,10 +38,10 @@ func _physics_process(delta):
 
 			if direction != Vector3.ZERO:
 				direction = direction.normalized()
-				$Pivot.basis = Basis.looking_at(direction)
-				$Pivot/AnimationPlayer.play("animation_walk")
+				$Models/Pivot.basis = Basis.looking_at(direction)
+				$Models/Pivot/AnimationPlayer.play("shale_walk")
 			if direction == Vector3.ZERO:
-				$Pivot/AnimationPlayer.play("animation_idle")
+				$Models/Pivot/AnimationPlayer.play("shale_idle")
 
 			# Ground Velocity
 			target_velocity.x = direction.x * speed
@@ -60,10 +59,10 @@ func _physics_process(delta):
 func _enter_tree():
 	set_multiplayer_authority(name.to_int())
 
-	
+
 func _on_button_pressed() -> void:
 	if is_multiplayer_authority():
-		$Label3D.text = $Control/LineEdit.text
+		$gui/NameSelect/Button.hide()
+		$gui/NameSelect/LineEdit.hide()
+		$Models/Pivot/Label3D.text = $gui/NameSelect/LineEdit.text
 		n = 1
-		$Control/LineEdit.hide()
-		$Control/Button.hide()
