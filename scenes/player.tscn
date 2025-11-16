@@ -1477,8 +1477,14 @@ environment = SubResource("Environment_d2wvv")
 
 [node name="gui" type="Node" parent="."]
 
-[node name="Controls" type="Node2D" parent="gui"]
-position = Vector2(-57, 153)
+[node name="Controls" type="Control" parent="gui"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -57.0
+offset_top = 153.0
+offset_right = -57.0
+offset_bottom = 153.0
 metadata/_edit_group_ = true
 
 [node name="up" type="TouchScreenButton" parent="gui/Controls"]

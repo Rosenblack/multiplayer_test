@@ -5,7 +5,6 @@ var peer = ENetMultiplayerPeer.new()
 
 func _ready() -> void:
 	pass
-	
 
 func _on_host_pressed() -> void:
 	peer.create_server(1027)

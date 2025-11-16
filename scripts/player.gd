@@ -9,6 +9,8 @@ var n = 0
 var model = 0
 
 func _ready() -> void:
+	if OS.get_name() == "Android" or OS.get_name() == "Web":
+		$gui/Controls.show()
 	cam.current = is_multiplayer_authority()
 	$Models/Pivot/AnimationPlayer.speed_scale = 2
 	if is_multiplayer_authority():

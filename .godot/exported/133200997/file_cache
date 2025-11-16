@@ -1,5 +1,5 @@
-res://assets/meshes2.tscn::40a8c79f15267ddad246a0fb1201fd62::1762253557::res://.godot/exported/133200997/export-3db85c25ec4ea15c7c54b344b6887048-meshes2.scn
-res://assets/world_tiles.tres::dd59ed5616426f39f7d961d770de3232::1763191225::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
-res://scenes/main.tscn::50aed73c28bee9f6915423232a99253e::1763191224::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
-res://scenes/player.tscn::c0116949fa3b364f98c93a53e022fab8::1763191012::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://assets/world_tiles.tres::718ca7d777a4c77420f43f7409c76549::1763265136::res://.godot/exported/133200997/export-b90477230664cb3c8996f3cec3d51aab-world_tiles.res
+res://scenes/main.tscn::0188e8d79b181a5cc8e002090a528069::1763265180::res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn
+res://scenes/player.tscn::45f5d75c91fa67eab35db7e64f4c7b5f::1763262538::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
 res://scenes/wall.tscn::3ed187c686c8d6f7d3adabb8d1a69c43::1763031327::res://.godot/exported/133200997/export-07690686bd1a72f71ae2b53bb79af276-wall.scn
+res://assets/meshlib.tscn::fb4b58ae6e809d383313bdfec9e8a356::1763265078::res://.godot/exported/133200997/export-2a4c5b876ef8a3c372f280a95acf8329-meshlib.scn
