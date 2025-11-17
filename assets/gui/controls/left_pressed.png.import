@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bsubi3re354uv"
 path.s3tc="res://.godot/imported/left_pressed.png-1cb05fd87827ed4e8cd547456dae8245.s3tc.ctex"
+path.etc2="res://.godot/imported/left_pressed.png-1cb05fd87827ed4e8cd547456dae8245.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/gui/controls/left_pressed.png"
-dest_files=["res://.godot/imported/left_pressed.png-1cb05fd87827ed4e8cd547456dae8245.s3tc.ctex"]
+dest_files=["res://.godot/imported/left_pressed.png-1cb05fd87827ed4e8cd547456dae8245.s3tc.ctex", "res://.godot/imported/left_pressed.png-1cb05fd87827ed4e8cd547456dae8245.etc2.ctex"]
 
 [params]
 

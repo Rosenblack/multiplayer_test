@@ -9,10 +9,12 @@ var n = 0
 var model = 0
 
 func _ready() -> void:
-	if OS.get_name() == "Android" or OS.get_name() == "Web":
-		$gui/Controls.show()
 	cam.current = is_multiplayer_authority()
 	$Models/Pivot/AnimationPlayer.speed_scale = 2
+	$gui/NameSelect/Button.hide()
+	$gui/NameSelect/LineEdit.hide()
+	$gui/ModelSelect/BaseChange.hide()
+	$gui/ModelSelect/ShaleChange.hide()
 	if is_multiplayer_authority():
 		# MAKE SURE THIS SHIT STAYS HIDDEN IN EDITOR OR IT BREAKS #
 		$gui/NameSelect/Button.show()
@@ -91,3 +93,23 @@ func _on_base_change_pressed() -> void:
 
 func _on_shale_change_pressed() -> void:
 		model = 1
+
+func _on_button_toggled(toggled_on: bool) -> void:
+	if toggled_on == true:
+		$gui/NameSelect/Button.hide()
+		$gui/NameSelect/LineEdit.hide()
+		$gui/ModelSelect/BaseChange.hide()
+		$gui/ModelSelect/ShaleChange.hide()
+		$gui/Controls.hide()
+		$gui/ControlsBig.show()
+		$gui/NameSelectBig.show()
+		$gui/ModelSelectBig.show()
+	if toggled_on == false:
+		$gui/NameSelect/Button.show()
+		$gui/NameSelect/LineEdit.show()
+		$gui/ModelSelect/BaseChange.show()
+		$gui/ModelSelect/ShaleChange.show()
+		$gui/Controls.show()
+		$gui/ControlsBig.hide()
+		$gui/NameSelectBig.hide()
+		$gui/ModelSelectBig.hide()

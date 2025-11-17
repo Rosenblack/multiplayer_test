@@ -1,3 +1,4 @@
-res://assets/meshlib.tscn
+res://scenes/player.tscn
 res://assets/world_tiles.tres
+res://scripts/player.gd
 res://scenes/main.tscn

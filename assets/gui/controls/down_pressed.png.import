@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://chufa1vr4egws"
 path.s3tc="res://.godot/imported/down_pressed.png-1092c0d2c8c81876938b24b45a8bd377.s3tc.ctex"
+path.etc2="res://.godot/imported/down_pressed.png-1092c0d2c8c81876938b24b45a8bd377.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://assets/gui/controls/down_pressed.png"
-dest_files=["res://.godot/imported/down_pressed.png-1092c0d2c8c81876938b24b45a8bd377.s3tc.ctex"]
+dest_files=["res://.godot/imported/down_pressed.png-1092c0d2c8c81876938b24b45a8bd377.s3tc.ctex", "res://.godot/imported/down_pressed.png-1092c0d2c8c81876938b24b45a8bd377.etc2.ctex"]
 
 [params]
 

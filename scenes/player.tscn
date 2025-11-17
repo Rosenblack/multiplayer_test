@@ -1478,41 +1478,83 @@ environment = SubResource("Environment_d2wvv")
 [node name="gui" type="Node" parent="."]
 
 [node name="Controls" type="Control" parent="gui"]
-visible = false
 layout_mode = 3
-anchors_preset = 0
-offset_left = -57.0
-offset_top = 153.0
-offset_right = -57.0
-offset_bottom = 153.0
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 94.0
+offset_top = -95.0
+offset_right = 94.0
+offset_bottom = -95.0
+grow_vertical = 0
 metadata/_edit_group_ = true
 
 [node name="up" type="TouchScreenButton" parent="gui/Controls"]
-position = Vector2(155, 269)
+position = Vector2(-32, -96.00001)
 texture_normal = ExtResource("2_n7ghd")
 texture_pressed = ExtResource("3_nvl01")
 action = "move_forward"
 
 [node name="down" type="TouchScreenButton" parent="gui/Controls"]
-position = Vector2(155, 397)
+position = Vector2(-32, 32)
 texture_normal = ExtResource("4_ivps1")
 texture_pressed = ExtResource("5_urp6f")
 action = "move_backward"
 
 [node name="left" type="TouchScreenButton" parent="gui/Controls"]
-position = Vector2(91, 333)
+position = Vector2(-95.999985, -32)
 texture_normal = ExtResource("6_bwjto")
 texture_pressed = ExtResource("7_606se")
 action = "move_left"
 
 [node name="right" type="TouchScreenButton" parent="gui/Controls"]
-position = Vector2(219, 333)
+position = Vector2(31.999998, -31.999996)
 texture_normal = ExtResource("8_u1c27")
 texture_pressed = ExtResource("9_op7ga")
 action = "move_right"
 
 [node name="Sprite2D" type="Sprite2D" parent="gui/Controls"]
-position = Vector2(187, 365)
+texture = ExtResource("10_q13i1")
+
+[node name="ControlsBig" type="Control" parent="gui"]
+visible = false
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 262.0
+offset_top = -258.0
+offset_right = 262.0
+offset_bottom = -258.0
+grow_vertical = 0
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="up" type="TouchScreenButton" parent="gui/ControlsBig"]
+position = Vector2(-32, -96.00001)
+texture_normal = ExtResource("2_n7ghd")
+texture_pressed = ExtResource("3_nvl01")
+action = "move_forward"
+
+[node name="down" type="TouchScreenButton" parent="gui/ControlsBig"]
+position = Vector2(-32, 32)
+texture_normal = ExtResource("4_ivps1")
+texture_pressed = ExtResource("5_urp6f")
+action = "move_backward"
+
+[node name="left" type="TouchScreenButton" parent="gui/ControlsBig"]
+position = Vector2(-95.999985, -32)
+texture_normal = ExtResource("6_bwjto")
+texture_pressed = ExtResource("7_606se")
+action = "move_left"
+
+[node name="right" type="TouchScreenButton" parent="gui/ControlsBig"]
+position = Vector2(31.999998, -31.999996)
+texture_normal = ExtResource("8_u1c27")
+texture_pressed = ExtResource("9_op7ga")
+action = "move_right"
+
+[node name="Sprite2D" type="Sprite2D" parent="gui/ControlsBig"]
 texture = ExtResource("10_q13i1")
 
 [node name="NameSelect" type="Control" parent="gui"]
@@ -1520,7 +1562,6 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="Button" type="Button" parent="gui/NameSelect"]
-visible = false
 layout_mode = 0
 offset_left = 131.0
 offset_top = 51.0
@@ -1529,12 +1570,39 @@ offset_bottom = 82.0
 text = "Enter"
 
 [node name="LineEdit" type="LineEdit" parent="gui/NameSelect"]
-visible = false
 layout_mode = 0
 offset_left = 4.0
 offset_top = 51.0
 offset_right = 129.0
 offset_bottom = 82.0
+placeholder_text = "Choose Name"
+max_length = 8
+
+[node name="NameSelectBig" type="Control" parent="gui"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -4.0
+offset_top = 55.0
+offset_right = -4.0
+offset_bottom = 55.0
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="Button" type="Button" parent="gui/NameSelectBig"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 0.33333206
+offset_right = 184.0
+offset_bottom = 31.333332
+text = "Enter"
+
+[node name="LineEdit" type="LineEdit" parent="gui/NameSelectBig"]
+layout_mode = 0
+offset_left = 1.6666665
+offset_top = 1.3333321
+offset_right = 126.666664
+offset_bottom = 32.333332
 placeholder_text = "Choose Name"
 max_length = 8
 
@@ -1545,23 +1613,67 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="BaseChange" type="Button" parent="gui/ModelSelect"]
-visible = false
 layout_mode = 0
-offset_left = 131.0
-offset_top = 83.0
-offset_right = 187.0
-offset_bottom = 114.0
+offset_left = 4.0
+offset_top = 84.0
+offset_right = 60.0
+offset_bottom = 115.0
 text = "Base"
 
 [node name="ShaleChange" type="Button" parent="gui/ModelSelect"]
-visible = false
 layout_mode = 0
-offset_left = 131.0
-offset_top = 115.0
-offset_right = 187.0
-offset_bottom = 146.0
+offset_left = 63.0
+offset_top = 84.0
+offset_right = 119.0
+offset_bottom = 115.0
 text = "Shale"
+
+[node name="Button" type="CheckButton" parent="gui/ModelSelect"]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 4.0
+offset_right = 905.0
+offset_bottom = 35.0
+scale = Vector2(1.5, 1.5)
+text = "Big Gui"
+
+[node name="ModelSelectBig" type="Control" parent="gui"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = -7.0
+offset_top = 55.0
+offset_right = 33.0
+offset_bottom = 95.0
+scale = Vector2(3, 3)
+metadata/_edit_group_ = true
+
+[node name="BaseChange" type="Button" parent="gui/ModelSelectBig"]
+layout_mode = 0
+offset_left = 2.6666665
+offset_top = 33.666664
+offset_right = 58.666668
+offset_bottom = 64.666664
+text = "Base"
+
+[node name="ShaleChange" type="Button" parent="gui/ModelSelectBig"]
+layout_mode = 0
+offset_left = 61.666668
+offset_top = 34.333332
+offset_right = 117.66667
+offset_bottom = 65.33333
+text = "Shale"
+
+[node name="Button" type="CheckButton" parent="gui/ModelSelectBig"]
+layout_mode = 0
+offset_left = 752.0
+offset_top = 2.0
+offset_right = 855.0
+offset_bottom = 33.0
+scale = Vector2(2, 2)
+text = "Big Gui"
 
 [connection signal="pressed" from="gui/NameSelect/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="gui/ModelSelect/BaseChange" to="." method="_on_base_change_pressed"]
 [connection signal="pressed" from="gui/ModelSelect/ShaleChange" to="." method="_on_shale_change_pressed"]
+[connection signal="toggled" from="gui/ModelSelect/Button" to="." method="_on_button_toggled"]
