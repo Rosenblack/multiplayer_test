@@ -86,6 +86,9 @@ func _on_button_pressed() -> void:
 		$gui/ModelSelect/BaseChange.hide()
 		$gui/ModelSelect/ShaleChange.hide()
 		$Models/Pivot/Label3D.text = $gui/NameSelect/LineEdit.text
+		$Models/Pivot/Label3D2.text = $gui/NameSelectBig/LineEdit.text
+		$gui/NameSelectBig.hide()
+		$gui/ModelSelectBig.hide()
 		n = 1
 
 func _on_base_change_pressed() -> void:

@@ -1465,6 +1465,12 @@ billboard = 1
 shaded = true
 text = "Player"
 
+[node name="Label3D2" type="Label3D" parent="Models/Pivot"]
+transform = Transform3D(1, -5.960464e-08, -4.4703484e-08, 1.3322676e-15, 1, -2.9802322e-08, -4.4703484e-08, -5.960464e-08, 1, 1.6727876e-07, 1.1935278, 4.0569736e-07)
+billboard = 1
+shaded = true
+text = "Player"
+
 [node name="Camera3D" type="Camera3D" parent="Models"]
 transform = Transform3D(0.7929838, -0.4653618, 0.39321128, 0.017345373, 0.66239303, 0.7489557, -0.6089958, -0.5870893, 0.5333388, 1.935, 2.56, 2.26)
 
@@ -1674,6 +1680,9 @@ scale = Vector2(2, 2)
 text = "Big Gui"
 
 [connection signal="pressed" from="gui/NameSelect/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="gui/NameSelectBig/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="gui/ModelSelect/BaseChange" to="." method="_on_base_change_pressed"]
 [connection signal="pressed" from="gui/ModelSelect/ShaleChange" to="." method="_on_shale_change_pressed"]
 [connection signal="toggled" from="gui/ModelSelect/Button" to="." method="_on_button_toggled"]
+[connection signal="pressed" from="gui/ModelSelectBig/BaseChange" to="." method="_on_base_change_pressed"]
+[connection signal="pressed" from="gui/ModelSelectBig/ShaleChange" to="." method="_on_shale_change_pressed"]
