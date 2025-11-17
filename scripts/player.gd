@@ -105,13 +105,15 @@ func _on_button_toggled(toggled_on: bool) -> void:
 		$gui/ModelSelect/ShaleChange.hide()
 		$gui/Controls.hide()
 		$gui/ControlsBig.show()
-		$gui/NameSelectBig.show()
-		$gui/ModelSelectBig.show()
+		if !n == 1:
+			$gui/NameSelectBig.show()
+			$gui/ModelSelectBig.show()
 	if toggled_on == false:
-		$gui/NameSelect/Button.show()
-		$gui/NameSelect/LineEdit.show()
-		$gui/ModelSelect/BaseChange.show()
-		$gui/ModelSelect/ShaleChange.show()
+		if !n == 1:
+			$gui/NameSelect/Button.show()
+			$gui/NameSelect/LineEdit.show()
+			$gui/ModelSelect/BaseChange.show()
+			$gui/ModelSelect/ShaleChange.show()
 		$gui/Controls.show()
 		$gui/ControlsBig.hide()
 		$gui/NameSelectBig.hide()

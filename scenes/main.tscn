@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bmtgmeweo1uj1"]
+[gd_scene load_steps=5 format=3 uid="uid://bmtgmeweo1uj1"]
 
 [ext_resource type="Script" uid="uid://duqpfx4hy6om" path="res://scripts/main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://b4fel1blquqcf" path="res://scenes/player.tscn" id="1_ig7tw"]
 [ext_resource type="MeshLibrary" uid="uid://bllolpfmlfcm7" path="res://assets/world_tiles.tres" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://grpn6g4n1he3" path="res://scenes/wall.tscn" id="4_jyhfs"]
 
 [node name="main" type="Node3D"]
 script = ExtResource("1_0xm2m")
@@ -56,6 +57,12 @@ transform = Transform3D(0.7929838, -0.46536183, 0.39321128, 0.017345373, 0.66239
 [node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
 _spawnable_scenes = PackedStringArray("uid://b4fel1blquqcf")
 spawn_path = NodePath("..")
+
+[node name="wall" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 7, 4, 0.5, -3)
+
+[node name="wall2" parent="." instance=ExtResource("4_jyhfs")]
+transform = Transform3D(7, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0.5, 4)
 
 [connection signal="pressed" from="CanvasLayer/host" to="." method="_on_host_pressed"]
 [connection signal="pressed" from="CanvasLayer/join" to="." method="_on_join_pressed"]
